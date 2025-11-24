@@ -1,0 +1,25 @@
+package prashant;
+
+public class sampleCode1 {
+	
+	public static void main(String[] args) 
+	{
+		
+		System.out.println("hello world");
+		decimalToBase(45, 2);
+		
+	}
+		
+public static String decimalToBase(int num, int base) {
+    char[] map = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ".toCharArray();
+    StringBuilder sb = new StringBuilder();
+
+    if (num == 0) return "0";
+
+    while (num > 0) {
+        sb.append(map[num % base]);
+        num /= base;
+    }
+    return sb.reverse().toString();
+}
+}
