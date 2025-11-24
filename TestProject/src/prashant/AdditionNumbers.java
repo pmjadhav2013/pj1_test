@@ -6,6 +6,7 @@ public class AdditionNumbers {
 	{
 		int a = 6;
 		int b = 9;
+		int g = 9;
 		
 		
 		int c = a+b;
